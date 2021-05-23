@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_red"
+        android:gravity="center"
+        android:text="我是标题"/>
+
+    <LinearLayout
+        android:id="@+id/pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_save"
+        android:layout_below="@+id/top"
+        android:layout_marginLeft="@dimen/dp_46"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_46"
+        android:background="@mipmap/bg_share"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="0dp"
+            android:layout_weight="85"/>
+
+        <TextView
+            android:id="@+id/tv_coin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/bg_share_name"
+            android:gravity="center"
+            android:text="EAC认购"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_27"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_13"
+            android:text="诚邀您的参加"
+            android:textColor="#2295EC"
+            android:textSize="@dimen/sp_23"/>
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="0dp"
+            android:layout_weight="92"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_13"
+            android:text="时间：2019/10/10-10:00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"/>
+
+        <TextView
+            android:id="@+id/tv_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="到2019/10/10-12:00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"/>
+
+        <ImageView
+            android:id="@+id/img_share_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_19"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_6"
+            android:text="扫码查看详情"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"/>
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="0dp"
+            android:layout_weight="23"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@drawable/rectangle_r4_g31"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_16"
+        android:paddingBottom="@dimen/dp_16"
+        android:text="生成分享海报"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"/>
+</RelativeLayout>
